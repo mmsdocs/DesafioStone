@@ -13,20 +13,20 @@ public class DesafioStone {
     public static void main(String[] args) 
     {
         
-//        TaskNovoProblema novoProblema = new TaskNovoProblema("Novo Problema - Força Bruta");
-//        TaskIcognita aIcognita = new TaskIcognita("A Icognita - Força Bruta");
-//        TaskPalavra aPalavra = new TaskPalavra("A Palavra - Força Bruta");
-        TaskLabirinto oLabirinto = new TaskLabirinto("O Labirinto - Força Bruta");
+        TaskNovoProblema novoProblema = new TaskNovoProblema("Novo Problema - Força Bruta");
+        TaskIcognita aIcognita = new TaskIcognita("A Icognita - Força Bruta");
+        TaskPalavra aPalavra = new TaskPalavra("A Palavra - Força Bruta");
+//        TaskLabirinto oLabirinto = new TaskLabirinto("O Labirinto - Força Bruta");
 //        TaskMinerador oMinerador = new TaskMinerador("O Minerador - Força Bruta");
         
         System.out.println("Iniciando Threads");
 //        
         ExecutorService threadExecutor = Executors.newFixedThreadPool(3);
 //              
-//        threadExecutor.execute(aPalavra);
-//        threadExecutor.execute(aIcognita);
-//        threadExecutor.execute(novoProblema); 
-        threadExecutor.execute(oLabirinto); 
+        threadExecutor.execute(aPalavra);
+        threadExecutor.execute(aIcognita);
+        threadExecutor.execute(novoProblema); 
+//        threadExecutor.execute(oLabirinto); 
 //        threadExecutor.execute(oMinerador);
         
         threadExecutor.shutdown();

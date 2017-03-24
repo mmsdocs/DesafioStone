@@ -30,7 +30,7 @@ public class TaskIcognita implements Runnable{
             resultadoTeste = a_icognita(valorAserTestado);
             if(resultadoTeste == 1)
             {
-                System.out.println("O valor de x eh: " + valorAserTestado);
+                System.out.println("O valor de x para a icognita eh: " + valorAserTestado);
                 break;
             }
             valorAserTestado = valorAserTestado.add(valorDeControle);

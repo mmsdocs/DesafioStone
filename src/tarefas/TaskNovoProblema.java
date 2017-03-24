@@ -29,7 +29,7 @@ public class TaskNovoProblema implements Runnable {
             resultado  = o_novo_problema(valorExpoente);
             if(resultado == 2)
             {
-                System.out.println("O valor de 'x' eh: " + valorExpoente);
+                System.out.println("O valor de 'x' para o problema eh: " + valorExpoente);
                 break;
             }
             valorExpoente++;
